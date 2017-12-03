@@ -261,8 +261,3 @@ func (s *LightEthereum) Stop() error {
 
 	return nil
 }
-
-// WriteTrustedCht writes trusted CHT root
-func (s *LightEthereum) WriteTrustedCht(cht light.TrustedCht) {
-	light.WriteTrustedCht(s.chainDb, cht)
-}
